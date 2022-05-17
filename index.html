@@ -5,6 +5,17 @@
     <title>Proyecto con JavaScript y JQuery</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Mis scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <section id="global">
@@ -24,7 +35,13 @@
         </nav>
       </header>
       <!-- Slider -->
-      <div id="slider"></div>
+      <div id="slider">
+        <div class="bxslider">
+          <div><img src="img/576410.jpg" title="Funky roots"></div>
+          <div><img src="img/602227.jpg" title="The long and winding road"></div>
+          <div><img src="img/810341.jpg" title="Happy trees"></div>
+        </div>
+      </div>
       <!-- contenido -->
       <section id="content">
         <div id="posts"></div>
