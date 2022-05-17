@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>Proyecto con JavaScript y JQuery</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css"/>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- slider -->
@@ -21,6 +22,11 @@
 
   </head>
   <body>
+    <div id="selector-theme">
+      <div id="to-green"></div>
+      <div id="to-red"></div>
+      <div id="to-blue"></div>
+    </div>
     <section id="global">
       <!-- Cabecera -->
       <header>
@@ -48,7 +54,7 @@
       <!-- contenido -->
       <section id="content">
         <div id="posts"></div>
-        <article class="post">
+        <!-- <article class="post">
           <h2>Titulo del articulo</h2>
           <span class="date">Fecha de publicación</span>
           <p>
@@ -61,7 +67,7 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <a href="#" class="button-more">leer más</a>
-        </article>
+        </article> -->
         <aside id="sidebar">
           <div id="about">
             <h4><span>¿quien soy?</span></h4>

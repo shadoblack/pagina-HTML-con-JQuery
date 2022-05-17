@@ -1,0 +1,13 @@
+body {
+    background: url("../img/904747.jpg");
+    background-attachment: fixed;
+  }
+  #logo {
+    background: red;
+  }
+  #menu ul li:hover {
+    background:red ;
+  }
+  .button-more {
+    background:red ;
+  }

@@ -42,10 +42,21 @@ $(document).ready(() => {
   ];
   console.log(posts);
   posts.forEach((item, index) => {
-      //ojo con las comillas,tiene que ser acento abierto.
-    var post =
-      `<article class="post"><h2> ${item.title} </h2><span class="date"> ${item.date} </span><p> ${item.content} </p><a href="#" class="button-more">leer más</a></article>`;
+    //ojo con las comillas,tiene que ser acento abierto.
+    var post = `<article class="post"><h2> ${item.title} </h2><span class="date"> ${item.date} </span><p> ${item.content} </p><a href="#" class="button-more">leer más</a></article>`;
     console.log(post);
     $("#posts").append(post);
+  });
+
+  //selector de tema
+  var theme = $("#theme");
+  $("#to-green").click(function(){
+    theme.attr("href", "css/green.css");
+  });
+  $("#to-blue").click(function(){
+    theme.attr("href", "css/blue.css");
+  });
+  $("#to-red").click(function(){
+    theme.attr("href", "css/red.css");
   });
 });
