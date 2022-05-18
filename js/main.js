@@ -50,13 +50,25 @@ $(document).ready(() => {
 
   //selector de tema
   var theme = $("#theme");
-  $("#to-green").click(function(){
+  $("#to-green").click(function () {
     theme.attr("href", "css/green.css");
   });
-  $("#to-blue").click(function(){
+  $("#to-blue").click(function () {
     theme.attr("href", "css/blue.css");
   });
-  $("#to-red").click(function(){
+  $("#to-red").click(function () {
     theme.attr("href", "css/red.css");
+  });
+
+  //scroll arriba de la web
+  $(".subir").click(function (e) {
+    e.preventDefault();
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
   });
 });
