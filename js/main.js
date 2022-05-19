@@ -1,13 +1,18 @@
 $(document).ready(() => {
   console.log("JQuery...OK");
   //slider
+  if(window.location.href.indexOf('index') > -1){
+  
   $(".bxslider").bxSlider({
     mode: "fade",
     captions: false,
     slideWidth: 1200,
   });
+}
 
   //Posts
+  if(window.location.href.indexOf('index') > -1){
+
   var posts = [
     {
       title: "prueba de titulo 1",
@@ -47,6 +52,7 @@ $(document).ready(() => {
     console.log(post);
     $("#posts").append(post);
   });
+}
 
   //selector de tema
   var theme = $("#theme");
@@ -93,4 +99,7 @@ $(document).ready(() => {
       location.reload();
     });
   }
+  if(window.location.href.indexOf('about') > -1){
+  $("#acordeon").accordion()
+}
 });
