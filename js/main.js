@@ -99,7 +99,17 @@ $(document).ready(() => {
       location.reload();
     });
   }
+  //Acordeon
   if(window.location.href.indexOf('about') > -1){
   $("#acordeon").accordion()
+}
+//reloj
+if(window.location.href.indexOf('reloj') > -1){
+  setInterval(function(){
+    var reloj = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+    $('#reloj').html(reloj);
+  },1000)
+ 
 }
 });
