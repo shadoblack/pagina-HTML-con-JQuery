@@ -144,7 +144,9 @@ body {
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="number"],
+select {
   padding: 5px;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -241,4 +243,25 @@ footer {
   padding: 30px;
   margin: 0px auto;
 
+}
+
+#form_contact{
+  width: 50%;
+  margin-top: 15px;
+
+}
+
+#form_contact_label{
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form-error{
+  float: right;
+  font-size: 11px;
+  background: red;
+  color: white;
+  padding: 10px;
+  width: 65%;
 }

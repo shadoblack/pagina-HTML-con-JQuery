@@ -112,4 +112,14 @@ if(window.location.href.indexOf('reloj') > -1){
   },1000)
  
 }
+
+//validacion
+if(window.location.href.indexOf('contact') > -1){
+  $("form input[name='date']").datepicker({
+    dateFormat: 'dd-mm-yy'
+  });
+  $.validate({
+    lang: 'es'
+  });
+}
 });
